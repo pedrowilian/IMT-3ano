@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS imt_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE imt_db;
+
+CREATE TABLE IF NOT EXISTS login_senha (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user VARCHAR(50) NOT NULL UNIQUE,
+    pass VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS notas_faltas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user VARCHAR(50) NOT NULL,
+    disciplina VARCHAR(100) NOT NULL,
+    nota FLOAT NOT NULL,
+    faltas INT NOT NULL,
+    ultima_alteracao DATETIME DEFAULT NULL,
+    FOREIGN KEY (user) REFERENCES login_senha(user)
+);
