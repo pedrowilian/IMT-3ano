@@ -1,5 +1,5 @@
 public class main {
-    public static void main(String[] args) {
+    public main(String[] args) {
         BinarySearchTree bst = new BinarySearchTree();
 
         // Ex1 Create BinarySearchTree from the array  {3,7,8,9,10,5}
