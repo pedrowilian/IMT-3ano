@@ -48,7 +48,7 @@ public class LabApp extends JFrame {
 
         panel.add(centerPanel, BorderLayout.CENTER);
 
-        // Bottom panel for queue info and Next button
+        // Bottom panel for queue info and Next button for interface
         JPanel bottomPanel = new JPanel(new BorderLayout());
         queueLabel = new JLabel("Queue size: 0", SwingConstants.LEFT);
         queueLabel.setFont(new Font("Arial", Font.PLAIN, 14));
