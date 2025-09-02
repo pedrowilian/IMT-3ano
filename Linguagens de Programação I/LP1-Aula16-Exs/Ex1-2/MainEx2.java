@@ -3,7 +3,7 @@ public class MainEx2
 {
     public static void main( String args[] )
     {
-        ReadTextFile application = new ReadTextFile();
+        ReadTextFile1 application = new ReadTextFile1();
         application.openFile();
         application.readUser();
         application.closeFile();

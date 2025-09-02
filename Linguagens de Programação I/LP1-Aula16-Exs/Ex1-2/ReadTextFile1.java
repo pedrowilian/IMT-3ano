@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-public class ReadTextFile
+public class ReadTextFile1
 {
     private Scanner input;
     Scanner sc = new Scanner(System.in);

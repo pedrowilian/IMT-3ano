@@ -5,7 +5,7 @@ import java.util.FormatterClosedException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-public class CreateTextFile {
+public class CreateTextFile1 {
     private Formatter output; // object used to output text to file
 
     public void openFile() // enable user to open file
@@ -59,8 +59,8 @@ public class CreateTextFile {
                 input.nextLine(); // discard input so user can try again
             } // end catch
             System.out.printf("%s\n ", "Enter Name <SPACE> Password <ENTER>", "? ");
-        input.close();
         } // end while
+        input.close();
     } // end method addRecords
 
     public void closeFile() // close file
