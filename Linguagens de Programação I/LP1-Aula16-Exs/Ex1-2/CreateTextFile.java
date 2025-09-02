@@ -59,6 +59,7 @@ public class CreateTextFile {
                 input.nextLine(); // discard input so user can try again
             } // end catch
             System.out.printf("%s\n ", "Enter Name <SPACE> Password <ENTER>", "? ");
+        input.close();
         } // end while
     } // end method addRecords
 

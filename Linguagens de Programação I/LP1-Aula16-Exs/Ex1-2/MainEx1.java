@@ -1,5 +1,5 @@
 // Testing the CreateTextFile class.
-public class Main
+public class MainEx1
 {
     public static void main( String args[] )
     {
