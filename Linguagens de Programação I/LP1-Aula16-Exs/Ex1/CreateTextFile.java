@@ -1,6 +1,5 @@
 // Writing data to a text file with class Formatter.
 import java.io.FileNotFoundException;
-import java.lang.SecurityException;
 import java.util.Formatter;
 import java.util.FormatterClosedException;
 import java.util.NoSuchElementException;
@@ -24,31 +23,27 @@ public class CreateTextFile {
         } // end catch
     } // end method openFile
 
-    public void addRecords() // add records to file
+    public void addUsers() // add records to file
     {
         // object to be written to file
-        AccountRecord record = new AccountRecord();
+        User user = new User();
         Scanner input = new Scanner(System.in);
-        System.out.printf("%s\n%s\n%s\n%s\n\n",
+        System.out.printf("%s\n%s\n\n",
                 "To terminate input, type the end-of-file indicator",
                 "when you are prompted to enter input.",
                 "On UMIX/Linux/Mac OS X type <ctrl> d then press Enter",
                 "On Windows type <ctrl> z then press Enter or <ctrl> e");
         System.out.printf("%s\n%s",
-                "Enter account number ( > 0) <SPACE> first name <SPACE> last name <SPACE> balance <ENTER>",
+                "Enter Name <SPACE> Password <ENTER>",
                 "? ");
         while (input.hasNext()) // loop until end-of-file indicator
         {
             try // output values to file
             { // retrieve data to be output
-                record.setAccount(input.nextInt()); // read account number
-                record.setFirstName(input.next()); // read first name
-                record.setLastName(input.next()); // read last name
-                record.setBalance(input.nextDouble()); // read balance
-                if (record.getAccount() > 0) { // write new record
-                    output.format("%d %s %s %.2f\n", record.getAccount(),
-                            record.getFirstName(), record.getLastName(),
-                            record.getBalance());
+                user.setName(input.next()); // Name
+                user.setPassword(input.next()); // Password
+                if (user.getName() != null && user.getPassword() != null) { // write new User
+                    output.format("%s %s\n", user.getName(), user.getPassword());
                 } // end if
                 else {
                     System.out.println(
@@ -63,8 +58,7 @@ public class CreateTextFile {
                 System.err.println("Invalid input. Please try again.");
                 input.nextLine(); // discard input so user can try again
             } // end catch
-            System.out.printf("%s %s\n%s", "Enter account number (>0) <SPACE>",
-                    "first name <SPACE> last name <SPACE> balance <ENTER>", "? ");
+            System.out.printf("%s\n ", "Enter Name <SPACE> Password <ENTER>", "? ");
         } // end while
     } // end method addRecords
 
@@ -73,9 +67,4 @@ public class CreateTextFile {
         if (output != null)
             output.close();
     } // end method closeFile
-
-    public void addUsers() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'addUsers'");
-    }
 } // end class CreateTextFile

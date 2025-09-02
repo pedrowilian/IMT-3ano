@@ -1,6 +1,5 @@
 // Testing the CreateTextFile class.
-public class CreateTextFileTest
-{
+public class CreateTextFileTest{
     public static void main( String args[] )
     {
         CreateTextFile application = new CreateTextFile();
