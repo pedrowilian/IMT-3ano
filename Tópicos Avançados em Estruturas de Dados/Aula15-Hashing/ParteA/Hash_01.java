@@ -1,3 +1,9 @@
+// Hashing Interno sem Tratamento de Colisão
+// Analise do Exercico
+// 3. Houve sim colisões, nas Chaves: 60, 44, 80, 90 totalizando um total de 4 colisões
+// 4. Não foi feito tratamento de colisões e as chaves que colidiram não foram armazenadas na tabela hash.
+// 5. Para tratar as colisões sugere-se duas possiveis soluções entre elas: encadeamento e endereçamento aberto (rehashing).
+
 public class Hash_01 {
 
     public static void main(String[] args) {
