@@ -24,7 +24,8 @@ public class ReadTextFile1
 
     public void readUser() // read record from file
     {
-        // object to be written to screen
+        // object to be written to screen 
+
         User user = new User();
         System.out.print("Digite o nome (A ser buscado): ");
         String Name = sc.next();
