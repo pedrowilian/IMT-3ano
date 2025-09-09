@@ -13,7 +13,7 @@ public class ReadTextFile
     {
         try
         {
-            input = new Scanner( new File( "texto.txt" ) );
+            input = new Scanner( new File( "teste.txt" ) );
         } // end try
         catch ( FileNotFoundException fileNotFoundException )
         {
