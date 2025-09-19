@@ -28,5 +28,6 @@ public class Main {
         output.addText(resultadoChecksumArquivo + "\n");
         output.addText(resultadoCRCArquivo + "\n");
         output.closeFile();
+        // Fim do programa
     }
 }
