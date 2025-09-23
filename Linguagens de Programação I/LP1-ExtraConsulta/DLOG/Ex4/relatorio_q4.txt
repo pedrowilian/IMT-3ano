@@ -1,0 +1,8 @@
+Mensagem (9): #VaiIMT!²
+
+PLAIN HEX:
+0000 - 23 56 61 69 49 4d 54 21 b2                       - #VaiIMT!.
+
+CIPHER HEX:
+0000 - 3f 73 7f 88 69 6e 76 44 d6                       - ?s..invD.
+
