@@ -1,0 +1,19 @@
+a) Projeto Criado
+b) Recebe o erro "Erro ao iniciar o cliente: Connection refused: connect"
+c) O servidor é aberto normalmente e aguardará a conexão do cliente
+d)
+
+====== Console do Cliente ======
+Cliente 127.0.0.1:4000 conectado ao servidor!
+Aguardando a mensagem de uma mensagem!
+Digite uma mensagem (ou <sair> para finalizar): oi
+Digite uma mensagem (ou <sair> para finalizar): tchau
+Digite uma mensagem (ou <sair> para finalizar): <sair>
+Cliente finalizado!
+
+Process finished with exit code 0
+
+e) O servidor continua aguardando a conexão de um cliente
+
+f) O segundo cliente é conecatdo ao servidor e o servidor continua aguardando a conexão de um cliente, porque cria uma thread separada para cada cliente que se conecta ao servidor e recebe as suas mensagens
+

@@ -1,0 +1,8 @@
+O que acontece se na linha de comando digitada via console:
+java MultipleTreadExample.java N, o valor de N for
+aumentando? Há um limite pragmático para N? Justifique!
+
+
+Existe um limite máximo para N tanto por conta de memória de computador, já que o proesso ultrapassará o suportado pelo sistema operacional, porém é impossível determinar um valor.
+Entretanto existe um limite Lógico que é um bilhão, já que é a quantidade de números que serão elevados a décima potência.
+
