@@ -1,0 +1,50 @@
+E.1
+    Inicialmente, criamos o servidor na porta especificada e aguardamos conexão de um cliente. Ao conectarmos um cliente ao servidor, 
+instanciamos um socket do cliente e o adicionamos ao final de uma lista ligada. O servidor cria uma Thread para cada novo cliente (Multithreading).
+Assim, é possível estabelecer a comunicação entre cliente e servidor com vários clientes concorrentes ao servidor. Assim, o servidor pode atender vários 
+clientes ao mesmo tempo e cada cliente pode enviar e receber mensagens simultaneamente, sem travar esperando respostas através dos métodos bloqueantes.
+
+E.2
+    Todos os clientes criados podem se comunicar com o servidor. Isso pode ser visto no console do servidor, onde as mensagens são 
+    exibidas indicando qual cliente as enviou. Há um limite de Thread que podem ser ciradas, imposto pelo sistema operacional. Consequentemente,
+    há um limite de Clientes, já que temos uma Thread no servidor por cliente, além das Threads próprias dos clientes.
+
+E.3
+    Gera uma exceção-> Exception in thread "main" java.lang.NullPointerException: Cannot invoke "SocketCliente.close()" because "this.clientSocket" is null.
+    Isso ocorre pois o servidor ainda não foi criado.
+
+E.4
+    Inicia-se o servidor na porta especificada e este aguarda a conexão de um cliente.
+
+E.5
+    No console do Cliente, surge o endereço de IP e a porta do Cliente conectado. Pede-se para enviar mensagems. Estas, por sua vez, 
+    serão exibidas no console do Servidor apoós serem enviadas. Além disso, no console do servidor, há uma identificação do cliente que 
+    enviou respectiva mensagem. Com o término da instância do Cliente, não é mais possível enviar mensagens. Porém, o servidor permanece ativo.
+
+E.6
+    Ocorre o mesmo que o exercício anterior, mas a instância do cliente permanece aberta.
+
+E.7
+    Ao executarmos mais de uma instância de Cliente, as mensagens enviadas pelos clientes são exibidas no console do servidor. Além disso,
+    no console de cada cliente, também são exibidas as mensagens dos outros cientes com a respectiva identificação (endereço do scoket). Por exemplo, a mensagem 
+    enviada pelo Cliente 1 aparecerá no console do Cliente 2, cada qual com sua respectiva porta onde o cliente foi conectado. Assim, 
+    se o endereço do Cliente 1 for 127.0.0.1:53330 e o do Cliente 2 for 127.0.0.1.53335 e enviarmos uma mensagem a partir de cada cliente, seus respectivos consoles
+    estarão com a seguinte configuração: 
+    Console do Cliente 1 após envio da mensagem do Cliente 1: -> Cliente /127.0.0.1:53335: Olá Cliente 1.
+    Analogamente para o console do Cliente 2:
+    -> Cliente /127.0.0.1:53330: Olá Cliente 2.
+
+E.8
+    No console do servidor, surge uma mensagem avisando que mais um cliente foi conectado ao um endereço novo. A seguir, ocorre o mesmo que o exercício anterior,
+    porém com apenas um cliente a mais (três ao invés de dois).
+
+E.9
+    Os clientes são desconectados, mas o servidor continua ativo.
+
+E.10
+    Erro ao iniciar o servidor: Address already in use: bind. Isso ocorre, pois tentamos iniciar um novo servidor no mesmo endereço onde o anterior já estava, sem finalizá-lo.
+
+E.11
+
+
+
