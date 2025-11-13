@@ -1,0 +1,10 @@
+Projeto realizado por:
+
+Enzo Oliveira D'Onofrio         - RA: 23.01561-6
+Leonardo Souza Olivieri         - RA: 23.01512-8
+Arthur Gama Ruiz                - RA: 23.01445-8
+João Vitor Morimoto Sesma       - RA: 23.01516-0
+Pedro Wilian Palumbo Bevilacqua - RA: 23.01307-9
+Felipe Fazio da Costa           - RA: 23.00055-4
+
+Dentro dessa pasta encontram-se o relatório em PDF, a apresentação em pptx e a implementação em Java, junto com o respectivo .jar.
