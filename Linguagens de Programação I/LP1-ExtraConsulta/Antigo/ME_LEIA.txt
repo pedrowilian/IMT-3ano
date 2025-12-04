@@ -1,0 +1,13 @@
+No arquivo P4 - LP - VITOR SOLLER.docx
+existem minhas respostas teóricas. (As respostas assinaladas estão de vermelho)
+É possível encontrar o código na pasta src.
+Os JAR na pasta principal estão funcionando, qualquer problema tente rodar abrindo o terminal na pasta e digitando:
+"java -jar Server.jar"
+
+Favor rodar apenas o Client clicando, porque senão pode ter portas presas no seu computador. Rode o servidor no VSCODE ou qualquer outra IDE.
+Caso o endereço esteja em uso, digite no cliente "--FINALIZAR--".
+Também é possível finalizar o servidor pelo gerenciador de tarefas.
+
+Obrigado pelo ano, Professor!
+Muito obrigado por estimular minha memória RAM.
+Soller
